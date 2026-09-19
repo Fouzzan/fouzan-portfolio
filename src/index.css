@@ -3,19 +3,18 @@
 @theme {
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace, sans-serif;
 
-  --color-canvas: #0b0c10;
-  --color-surface: #12141d;
-  --color-surface-hover: #191c29;
-  --color-surface-border: #232738;
+  --color-canvas: #06080d;
+  --color-[#0b0c10]: #090c14;
+  --color-surface: #0f121d;
+  --color-surface-hover: #161b2b;
+  --color-surface-border: #1c2438;
   
-  --color-accent: #8b5cf6;
-  --color-accent-hover: #7c3aed;
-  --color-accent-light: #a78bfa;
-
-  --color-heading: #f3f4f6;
-  --color-body: #9ca3af;
-  --color-muted: #6b7280;
+  --color-emerald-500: #10b981;
+  --color-emerald-400: #34d399;
+  --color-emerald-300: #6ee7b7;
+  --color-cyan-400: #22d3ee;
 }
 
 @layer base {
@@ -24,41 +23,45 @@
   }
   
   body {
-    background-color: var(--color-canvas);
-    color: var(--color-body);
+    background-color: #06080d;
+    color: #94a3b8;
     font-family: var(--font-sans);
     letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    color: var(--color-heading);
+    color: #f1f5f9;
     letter-spacing: -0.02em;
   }
 }
 
-/* Subtly styled custom scrollbar */
+/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b0c10;
+  background: #06080d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f2430;
+  background: #192033;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e3547;
+  background: #10b981;
 }
 
-/* Subtle grid lines background pattern */
-.bg-grid-pattern {
-  background-size: 32px 32px;
+/* Technical grid blueprint background pattern */
+.bg-grid-blueprint {
+  background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
 }

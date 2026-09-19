@@ -4,23 +4,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-[#1a1d2b] bg-[#0b0c10] text-xs">
+    <footer className="py-12 border-t border-[#1c2438] bg-[#06080d] text-xs font-mono">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         
         {/* Left: Copyright */}
-        <div className="flex items-center gap-2 text-gray-400 font-mono">
-          <span>&copy; {currentYear} Fouzan Muhammed.</span>
-          <span className="hidden sm:inline-block text-gray-600">|</span>
-          <span className="text-gray-500">Python Full Stack Developer</span>
+        <div className="flex items-center gap-2 text-slate-400">
+          <span className="text-slate-200 font-semibold">&copy; {currentYear} Fouzan Muhammed.</span>
+          <span className="text-slate-600">|</span>
+          <span className="text-emerald-400">Python Full Stack Developer</span>
         </div>
 
-        {/* Right: Quick back to top */}
-        <div className="flex items-center gap-6 text-gray-400">
+        {/* Right: Social & Back-to-Top Links */}
+        <div className="flex items-center gap-6 text-slate-400">
           <a
             href="https://github.com/Fouzzan"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-purple-400 transition-colors"
+            className="hover:text-emerald-400 transition-colors"
           >
             GitHub
           </a>
@@ -28,13 +28,13 @@ export default function Footer() {
             href="https://www.linkedin.com/in/fouzan-mhd/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-purple-400 transition-colors"
+            className="hover:text-emerald-400 transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="#home"
-            className="flex items-center gap-1 hover:text-purple-400 transition-colors font-mono"
+            className="flex items-center gap-1 text-slate-300 hover:text-emerald-400 transition-colors font-semibold"
           >
             <span>Back to top</span>
             <i className="ri-arrow-up-line"></i>
